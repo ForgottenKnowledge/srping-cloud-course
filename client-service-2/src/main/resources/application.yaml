@@ -1,0 +1,20 @@
+server:
+  port: 8767
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: client-service
+  #  config:
+  #    import: "optional:configserver:"
+  profiles:
+    active: native
+  data:
+    mongodb:
+      database: admin
+#      username: admin
+#      password: admin

@@ -1,5 +1,5 @@
 server:
-  port: 8766
+  port: 8098
 
 eureka:
   client:
@@ -8,9 +8,9 @@ eureka:
 
 spring:
   application:
-    name: client-service
-#  config:
-#    import: "optional:configserver:"
+    name: client-updater
+  #  config:
+  #    import: "optional:configserver:"
   profiles:
     active: native
   data:

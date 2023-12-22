@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-client
+
+server:
+  port: 8762
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka # 1 укажите явный маршрут к серверу eureka (serviceUrl)
+    eureka-service-url-poll-interval-seconds: 35 # 3 укажите интервал в 35 сек через который клиент шлет эхо запрос на сервер
+  instance:
+    preferIpAddress: true # 2 использовать IP адрес
+    lease-renewal-interval-in-seconds: 30 # указывает интервал эхо запроса, который клиент отправляет на сервер (значение по умолчанию - 30 секунд).
