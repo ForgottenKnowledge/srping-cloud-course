@@ -18,3 +18,7 @@ spring:
       database: admin
 #      username: admin
 #      password: admin
+
+feign:
+  circuitbreaker:
+    enabled: true
