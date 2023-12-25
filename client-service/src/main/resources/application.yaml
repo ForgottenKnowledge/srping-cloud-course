@@ -21,3 +21,8 @@ spring:
 feign:
   circuitbreaker:
     enabled: true
+
+Lospring:
+  sleuth:
+    sampler:
+      probability: 2.0
