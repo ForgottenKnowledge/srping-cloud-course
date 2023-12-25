@@ -18,3 +18,8 @@ spring:
       database: admin
 #      username: admin
 #      password: admin
+
+Lospring:
+  sleuth:
+    sampler:
+      probability: 2.0
