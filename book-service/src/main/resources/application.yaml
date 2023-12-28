@@ -23,3 +23,6 @@ Lospring:
   sleuth:
     sampler:
       probability: 2.0
+logging:
+  file:
+    name: C:\programs\ELK\logstash-8.11.3\logs\application.log
